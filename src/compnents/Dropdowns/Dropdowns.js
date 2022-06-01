@@ -161,97 +161,105 @@ const Dropdowns = () => {
         </div>
       </div>
       <div className="row container mx-auto">
-        <div className="dropdown container my-5 shadow col-lg-4">
-          <div className="dropdown-header" onClick={toggleDropdown4}>
-            <h6>
-              {selectedItem
-                ? items4.find((item) => item.id === selectedItem).label
-                : "Management / Executive"}
-            </h6>
-            <FontAwesomeIcon
-              className={`fa fa-chevron-right icon ${isOpen4 && "open"}`}
-              icon={faChevronCircleRight}
-            />
-          </div>
-          <div className={`dropdown-body ${isOpen4 && "open"}`}>
-            {items4.map((item) => (
-              <div
-                className="dropdown-item"
-                onClick={(e) => handleItemClick(e.target.id)}
-                id={item.id}
-              >
-                <span
-                  className={`dropdown-item-dot ${
-                    item.id === selectedItem && "selected"
-                  }`}
+        <div className="col-lg-4">
+          <div className="dropdown container my-5 shadow ">
+            <div className="dropdown-header" onClick={toggleDropdown4}>
+              <h6>
+                {selectedItem
+                  ? items4.find((item) => item.id === selectedItem).label
+                  : "Management / Executive"}
+              </h6>
+              <FontAwesomeIcon
+                className={`fa fa-chevron-right icon ${isOpen4 && "open"}`}
+                icon={faChevronCircleRight}
+              />
+            </div>
+            <div className={`dropdown-body ${isOpen4 && "open"}`}>
+              {items4.map((item) => (
+                <div
+                  className="dropdown-item"
+                  onClick={(e) => handleItemClick(e.target.id)}
+                  id={item.id}
                 >
-                  •{" "}
-                </span>
-                {item.label}
-              </div>
-            ))}
+                  <span
+                    className={`dropdown-item-dot ${
+                      item.id === selectedItem && "selected"
+                    }`}
+                  >
+                    •{" "}
+                  </span>
+                  {item.label}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="dropdown container my-5 shadow col-lg-4">
-          <div className="dropdown-header" onClick={toggleDropdown5}>
-            <h6>
-              {selectedItem
-                ? items5.find((item) => item.id === selectedItem).label
-                : "Career Opportunity"}
-            </h6>
-            <FontAwesomeIcon
-              className={`fa fa-chevron-right icon ${isOpen5 && "open"}`}
-              icon={faChevronCircleRight}
-            />
-          </div>
-          <div className={`dropdown-body ${isOpen5 && "open"}`}>
-            {items5.map((item) => (
-              <div
-                className="dropdown-item"
-                onClick={(e) => handleItemClick(e.target.id)}
-                id={item.id}
-              >
-                <span
-                  className={`dropdown-item-dot ${
-                    item.id === selectedItem && "selected"
-                  }`}
+
+        <div className="col-lg-4">
+          <div className="dropdown container my-5 shadow ">
+            <div className="dropdown-header" onClick={toggleDropdown5}>
+              <h6>
+                {selectedItem
+                  ? items5.find((item) => item.id === selectedItem).label
+                  : "Career Opportunity"}
+              </h6>
+              <FontAwesomeIcon
+                className={`fa fa-chevron-right icon ${isOpen5 && "open"}`}
+                icon={faChevronCircleRight}
+              />
+            </div>
+            <div className={`dropdown-body ${isOpen5 && "open"}`}>
+              {items5.map((item) => (
+                <div
+                  className="dropdown-item"
+                  onClick={(e) => handleItemClick(e.target.id)}
+                  id={item.id}
                 >
-                  •{" "}
-                </span>
-                {item.label}
-              </div>
-            ))}
+                  <span
+                    className={`dropdown-item-dot ${
+                      item.id === selectedItem && "selected"
+                    }`}
+                  >
+                    •{" "}
+                  </span>
+                  {item.label}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="dropdown container my-5 shadow col-lg-4">
-          <div className="dropdown-header" onClick={toggleDropdown6}>
-            <h6>
-              {selectedItem
-                ? items6.find((item) => item.id === selectedItem).label
-                : "Circulation"}
-            </h6>
-            <FontAwesomeIcon
-              className={`fa fa-chevron-right icon ${isOpen6 && "open"}`}
-              icon={faChevronCircleRight}
-            />
-          </div>
-          <div className={`dropdown-body ${isOpen6 && "open"}`}>
-            {items6.map((item) => (
-              <div
-                className="dropdown-item"
-                onClick={(e) => handleItemClick(e.target.id)}
-                id={item.id}
-              >
-                <span
-                  className={`dropdown-item-dot ${
-                    item.id === selectedItem && "selected"
-                  }`}
+
+        <div className="col-lg-4">
+          <div className="dropdown container my-5 shadow ">
+            <div className="dropdown-header" onClick={toggleDropdown6}>
+              <h6>
+                {selectedItem
+                  ? items6.find((item) => item.id === selectedItem).label
+                  : "Circulation"}
+              </h6>
+              <FontAwesomeIcon
+                className={`fa fa-chevron-right icon ${isOpen6 && "open"}`}
+                icon={faChevronCircleRight}
+              />
+            </div>
+            <div className={`dropdown-body ${isOpen6 && "open"}`}>
+              {items6.map((item) => (
+                <div
+                  className="dropdown-item"
+                  onClick={(e) => handleItemClick(e.target.id)}
+                  id={item.id}
                 >
-                  •{" "}
-                </span>
-                {item.label}
-              </div>
-            ))}
+                  <span
+                    className={`dropdown-item-dot ${
+                      item.id === selectedItem && "selected"
+                    }`}
+                  >
+                    •{" "}
+                  </span>
+                  {item.label}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

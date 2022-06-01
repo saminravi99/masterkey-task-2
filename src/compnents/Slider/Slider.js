@@ -24,7 +24,7 @@ export default function Slider() {
  
 
   return (
-    <div className="mt-5">
+    <div className="mt-3">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -44,12 +44,12 @@ export default function Slider() {
           <div className="slider-div">
             <img className="slider-img" src={slider1} alt="" />
             <div
-              data-aos="fade-up"
+              data-aos="slide-left"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="false"
               data-aos-once="false"
-              data-aos-anchor-placement="top-center"
+            //   data-aos-anchor-placement="top-center"
               className="slider-text"
             >
               <h1>&apos;মুজিববর্ষের অঙ্গিকার</h1>
@@ -64,9 +64,9 @@ export default function Slider() {
               data-aos="slide-left"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              data-aos-mirror="true"
+              data-aos-mirror="false"
               data-aos-once="false"
-              data-aos-anchor-placement="top-center"
+            //   data-aos-anchor-placement="top-center"
               className="slider-text"
             >
               <h1>&apos;মুজিববর্ষের অঙ্গিকার</h1>
@@ -81,9 +81,9 @@ export default function Slider() {
               data-aos="slide-left"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              data-aos-mirror="true"
+              data-aos-mirror="false"
               data-aos-once="false"
-              data-aos-anchor-placement="top-center"
+            //   data-aos-anchor-placement="top-center"
               className="slider-text"
             >
               <h1>&apos;মুজিববর্ষের অঙ্গিকার</h1>

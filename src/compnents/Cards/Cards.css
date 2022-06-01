@@ -27,3 +27,31 @@
     position: absolute;
     bottom: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .business-card-container{
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    .business-card{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .card-img-div{
+        position:absolute;
+        top: 10px;;
+        right: 10px;;
+    }
+    .card-img{
+        width: 100px;
+        height: 50px;
+    }
+    .card-body{
+        position: relative;
+    }
+    .card-title{
+        position: absolute;
+        bottom: 0;
+    }
+}
+    
