@@ -1,13 +1,18 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './compnents/Home/Home';
 import NavBar from './compnents/NavBar/NavBar';
 
 function App() {
   return (
     <div>
       <NavBar></NavBar>
-     <h1>
-        Hello World
-     </h1>
+     <Routes>
+       <Route
+          path="/"
+          element={<Home />}
+       ></Route>
+     </Routes>
     </div>
   );
 }
