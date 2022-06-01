@@ -1,10 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import slider1 from "../../img/slider1.jpg";
 import slider2 from "../../img/slider2.jpg";
 import slider3 from "../../img/slider3.jpg";
-import slider4 from "../../img/slider4.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
